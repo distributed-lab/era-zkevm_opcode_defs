@@ -78,6 +78,7 @@ pub const ADDRESS_SYSTEM_CONTEXT: u16 = 0x800B;
 pub const ADDRESS_BOOTLOADER_UTILITIES: u16 = 0x800C;
 pub const ADDRESS_EVENT_WRITER: u16 = 0x800D;
 pub const ADDRESS_KECCAK256: u16 = 0x8010;
+pub const ADDRESS_FRI_PROOF_VERIFY_ORACLE: u16 = 0x8010;
 
 pub const BOOTLOADER_MAX_MEMORY: u32 = u32::MAX;
 // 4 KB for new frames is "free"
@@ -150,4 +151,6 @@ lazy_static! {
         Address::from_low_u64_be(ECRECOVER_INNER_FUNCTION_PRECOMPILE_ADDRESS as u64);
     pub static ref SECP256R1_VERIFY_INNER_FUNCTION_PRECOMPILE_FORMAL_ADDRESS: Address =
         Address::from_low_u64_be(SECP256R1_VERIFY_PRECOMPILE_ADDRESS as u64);
+    pub static ref FRI_PROOF_VERIFY_ORACLE_PRECOMPILE_FORMAL_ADDRESS: Address =
+        Address::from_low_u64_be(ADDRESS_FRI_PROOF_VERIFY_ORACLE as u64);
 }

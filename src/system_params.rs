@@ -158,4 +158,10 @@ lazy_static! {
         Address::from_low_u64_be(SECP256R1_VERIFY_PRECOMPILE_ADDRESS as u64);
     pub static ref FRI_PROOF_VERIFY_ORACLE_PRECOMPILE_FORMAL_ADDRESS: Address =
         Address::from_low_u64_be(ADDRESS_FRI_PROOF_VERIFY_ORACLE as u64);
+    pub static ref ECADD_PRECOMPILE_FORMAL_ADDRESS: Address =
+        Address::from_low_u64_be(ECADD_INNER_FUNCTION_PRECOMPILE_ADDRESS as u64);
+    pub static ref ECMUL_PRECOMPILE_FORMAL_ADDRESS: Address =
+        Address::from_low_u64_be(ECMUL_INNER_FUNCTION_PRECOMPILE_ADDRESS as u64);
+    pub static ref ECPAIRING_PRECOMPILE_FORMAL_ADDRESS: Address =
+        Address::from_low_u64_be(ECPAIRING_INNER_FUNCTION_PRECOMPILE_ADDRESS as u64);
 }

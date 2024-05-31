@@ -164,4 +164,6 @@ lazy_static! {
         Address::from_low_u64_be(ECMUL_INNER_FUNCTION_PRECOMPILE_ADDRESS as u64);
     pub static ref ECPAIRING_PRECOMPILE_FORMAL_ADDRESS: Address =
         Address::from_low_u64_be(ECPAIRING_INNER_FUNCTION_PRECOMPILE_ADDRESS as u64);
+    pub static ref MODEXP_PRECOMPILE_FORMAL_ADDRESS: Address =
+        Address::from_low_u64_be(MODEXP_INNER_FUNCTION_PRECOMPILE_ADDRESS as u64);
 }
